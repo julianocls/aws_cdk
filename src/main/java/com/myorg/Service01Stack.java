@@ -15,17 +15,17 @@ import software.constructs.Construct;
 
 public class Service01Stack extends Stack {
 
-    public static final int PORT = 8080;
-    public static final String SERVICE_NAME = "Service01";
-    public static final String LOG_GROUP = "Service01LogGroup";
-    public static final String AWS_PROJECT_NAME = "julianoclsantos/curso_aws_project01:1.0.0";
-    public static final String STATUS_CODE = "200";
-    public static final String CONTAINER_NAME = "aws_project01";
-    public static final String ACTUATOR_HEALTH = "/actuator/health";
-    public static final int MIN_CAPACITY = 2;
-    public static final int MAX_CAPACITY = 4;
-    public static final int TARGET_UTILIZATION_PERCENT = 50;
-    public static final int SECONDS_DURATION = 60;
+    private static final int PORT = 8080;
+    private static final String SERVICE_NAME = "Service01";
+    private static final String LOG_GROUP = "Service01LogGroup";
+    private static final String AWS_PROJECT_NAME = "julianoclsantos/curso_aws_project01:1.0.0";
+    private static final String STATUS_CODE = "200";
+    private static final String CONTAINER_NAME = "aws_project01";
+    private static final String ACTUATOR_HEALTH = "/actuator/health";
+    private static final int MIN_CAPACITY = 2;
+    private static final int MAX_CAPACITY = 4;
+    private static final int TARGET_UTILIZATION_PERCENT = 50;
+    private static final int SECONDS_DURATION = 60;
 
     public Service01Stack(final Construct scope, final String id, Cluster cluster) {
         this(scope, id, null, cluster);
